@@ -41,24 +41,3 @@ Autor: Gabriel da Costa Conceição
 
 
 ---
-
-## 4. `requirements.txt`
-
-- Correto, com as libs necessárias.
-
----
-
-## 5. `setup.sh` e `run.sh`
-
-- Scripts claros e funcionais.  
-- Lembre de dar permissão executável: `chmod +x setup.sh run.sh`  
-- Talvez no `run.sh` você possa aceitar um argumento para facilitar (exemplo abaixo):
-
-```bash
-#!/bin/bash
-source venv/bin/activate
-if [ "$1" != "" ]; then
-  python leitor_pdf_voz.py "$1"
-else
-  python leitor_pdf_voz.py Biblioteca
-fi
